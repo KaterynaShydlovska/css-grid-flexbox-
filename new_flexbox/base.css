@@ -1,0 +1,20 @@
+html, body{
+  height: 100%;
+}
+
+li{
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  /* height: 30px; */
+  /* text-align: center; */
+  font-size: 30px;
+ 
+
+}
+.container{
+  text-decoration: none;
+}
+/* .search{
+  background-color: red;
+} */
