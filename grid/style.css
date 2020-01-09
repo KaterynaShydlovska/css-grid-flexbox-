@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.grid-container{
+  height: 100vh;
+  border: 10px solid green;
+  display: grid;
+  grid-template-rows: 200px  200px;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: center;
+  align-content: space-evenly; */
+  /* justify-items: center;
+  align-items: center; */
+  /* grid-auto-rows:200px ; */
+
+  /* grid pats( space betweeb boxes */
+  /* grid-row-gap: 20px;
+  grid-column-gap: 20px; */
+
+  /* shortcut for spacing(10px for row, 20px for column */
+  grid-gap: 10px 20px;
+}
+
+.grid-item{
+  background-color: aqua;
+  border: 4px solid red;
+  padding: 20px;
+}
+
+.item-1{
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+
+  /* shortcut */
+  grid-column: 1 / 3;
+  
+}
+
+.item-2{
+  /* grid-row-start: 1;
+  grid-row-start: 3; */
+   /* grid-column-start: 3;
+  grid-column-end: 4; */
+
+  /* shortcut */
+
+  /* grid-row: 1 / 3;
+  grid-column: 3 / 4; */
+
+
+ /* shortcut */
+  grid-area: 1 / 3 / 3 / 4;
+  z-index: 1;
+  
+}
+
+.item-3{
+  /* grid-row: 2 / span 3;
+  grid-column: 1 / span 2; */
+  grid-area: 2 / 1 / span 3 / span 2;
+  
+}
+
+.item-4{
+  grid-area: 2 / 2 / span 2/ span 2;
+  
+}
+
+.item-5{
+  
+}
